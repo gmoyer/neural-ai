@@ -8,5 +8,8 @@ class Node {
     private:
         Path *path; //pointer to the first path from the node
         int potential; //the energy needed to activate the node
-        int energy = 0; //the current amount of energy
+        int evenEnergy = 0; //the current amount of energy for an even turn
+        int oddEnergy = 0; //the current amount of energy for an odd turn
+        bool inEvenQueue = false;
+        bool inOddQueue = false;
 }
